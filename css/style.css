@@ -1,3 +1,16 @@
+:root {
+	--primary-color: #2c70ff;
+	--accent-color: #122ab2;
+	--white-color: #ffffff;
+	--black-color: #222222;
+	--dark-grey-color: #7c7c7c;
+	--medium-grey-color: #a4a4a4;
+	--light-grey-color: #f7f7f7;
+	--purple-color: #ae81ff;
+	--pink-color:#f9265e;
+	--blue-color: ##66d9eb;
+}
+
 body, h1, h2, p, ul, li, a {
 	margin: 0px;
 	padding: 0px;
@@ -5,7 +18,7 @@ body, h1, h2, p, ul, li, a {
 
 body {
 	font-family: "Nunito", Helvetica, Arial, sans-serif;
-	color: #222222;
+	color: var(--black-color);
 }
 
 ul {
@@ -27,8 +40,8 @@ img {
 
 /*Superinfo*/
 .superinfo-bg {
-	background: #122ab2;
-	color: #fff;
+	background: var(--accent-color);
+	color: var(--white-color);
 }
 
 .superinfo {
@@ -45,12 +58,12 @@ img {
 }
 
 .superinfo a {
-	color: #fff;
+	color: var(--white-color);
 }
 
 /*Menu*/
 .menu-bg {
-	background: #2c70ff;
+	background: var(--primary-color);
 }
 
 .menu {
@@ -64,7 +77,7 @@ img {
 }
 
 .menu a {
-	color: #fff;
+	color: var(--white-color);
 }
 
 .menu-logo a {
@@ -85,7 +98,7 @@ img {
 }
 
 .menu-nav a:hover{
-	color: #122ab2;
+	color: var(--accent-color);
 }
 
 /*Introdução*/
@@ -99,8 +112,8 @@ img {
 
 /*Sobre*/
 .sobre {
-	border-top: 2px solid #2c70ff;
-	border-bottom: 2px solid #2c70ff;
+	border-top: 2px solid var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 60px 0;
@@ -122,7 +135,7 @@ img {
 	font-size: 1.25em;
 	line-height: 1.4;
 	margin-bottom: 1em;
-	color: #7c7c7c;
+	color: a4a4a4
 }
 
 .sobre-img {
@@ -155,26 +168,26 @@ img {
 
 .produtos-item h2 {
 	font-size: 3em;
-	color: #a4a4a4;
-	background: #f7f7f7;
+	color: var(--medium-grey-color);
+	background:var(--light-grey-color);
 	padding: 60px 20px;
 }
 
 .purple {
-	border-top: 8px solid #ae81ff;
+	border-top: 8px solid var(--purple-color)
 }
 
 .pink {
-	border-top: 8px solid #f9265e;
+	border-top: 8px solid var(--pink-color);
 }
 
 .blue {
-	border-top: 8px solid #66d9eb;
+	border-top: 8px solid var(--blue-color);
 }
 
 /*Preco*/
 .preco {
-	background: #f7f7f7;
+	background:  var(--light-grey-color);
 	padding: 60px;
 	display: flex;
 	flex-wrap: wrap;
@@ -183,14 +196,14 @@ img {
 
 .preco-item {
 	flex: 1 1 260px;
-	border: 4px solid #fff;
+	border: 4px solid var(--white-color);
 	padding: 20px;
 	margin: 10px;
 }
 
 .preco-item h2 {
 	font-size: 3em;
-	color: #a4a4a4;
+	color: var(--medium-grey-color);
 	text-align: center;
 	margin-top: 20px;
 }
@@ -203,8 +216,8 @@ img {
 	text-align: center;
 	font-weight: bold;
 	padding: 10px 0 5px 0;
-	border-top: 4px solid #fff;
-	border-bottom: 4px solid #fff;
+	border-top: 4px solid var(--white-color);
+	border-bottom: 4px solid var(--white-color);
 }
 
 .preco-item sup {
@@ -216,7 +229,7 @@ img {
 	margin: 20px auto;
 	font-size: 1.25em;
 	font-style: italic;
-	color: #7c7c7c;
+	color: var(--dark-grey-color);
 }
 
 .preco-item li {
@@ -231,7 +244,7 @@ img {
 	display: block;
 	width: 6px;
 	height: 6px;
-	background: #2c70ff;
+	background: var(--primary-color);
 	border-radius: 50%;
 }
 
@@ -240,7 +253,7 @@ img {
 	display: block;
 	margin: 20px auto;
 	border: 4px solid;
-	color: #222222;
+	color: var(--black-color);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 2.25em;
@@ -263,7 +276,7 @@ img {
 
 .qualidade-item h2 {
 	font-size: 2.25em;
-	color: #a4a4a4;
+	color: var(--medium-grey-color);
 	margin-bottom: 20px;
 }
 
@@ -276,26 +289,26 @@ img {
 }
 
 .qualidade-item:nth-of-type(3n+1) h2::before {
-	background: #ae81ff;
+	background: var(--purple-color)
 }
 
 .qualidade-item:nth-of-type(3n+2) h2::before {
-	background: #f9265e;
+	background: var(--pink-color)
 }
 
 .qualidade-item:nth-of-type(3n+3) h2::before {
-	background: #66d9eb;
+	background: var(--blue-color)
 }
 
 .qualidade-item p {
 	font-size: 1.25em;
 	line-height: 1.4;
-	color: #7c7c7c;
+	color: var(--dark-grey-color);
 }
 
 /*Newsletter*/
 .newsletter {
-	background: #f7f7f7;
+	background:  var(--light-grey-color);
 	padding: 60px calc((100% - 960px) / 2 );
 	display: flex;
 	flex-wrap: wrap;
@@ -308,14 +321,14 @@ img {
 
 .newsletter-info h1 {
 	font-size: 3em;
-	color: #a4a4a4;
+	color: var(--medium-grey-color);
 }
 
 .newsletter-info p {
 	font-size: 1.25em;
 	font-style: italic;
 	max-width: 230px;
-	color: #7c7c7c;
+	color: var(--dark-grey-color);
 	margin-bottom: 10px;
 }
 
@@ -330,10 +343,10 @@ img {
 .newsletter-form input {
 	flex: 3 1 260px;
 	font-size: 1.25em;
-	color: #7c7c7c;
+	color: var(--dark-grey-color);
 	font-style: italic;
 	font-family: "Nunito", Helvetica, Arial, sans-serif;
-	border: 4px solid #2c70ff;
+	border: 4px solid var(--primary-color);
 	background: transparent;
 	padding: 15px 10px;
 	margin: 0px;
@@ -346,8 +359,8 @@ img {
 	font-size: 2.25em;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: #2c70ff;
-	color: white;
+	background: var(--primary-color);
+	color: var(--white-color);
 	margin: 0px;
 	cursor: pointer;
 	border: 0px;
@@ -357,7 +370,7 @@ img {
 /*Footer*/
 .footer {
 	display: flex;
-	background: #2c70ff;
+	background: var(--primary-color);
 	height: 200px;
 	align-items: center;
 }
@@ -366,9 +379,8 @@ img {
 	flex: 1;
 	text-align: center;
 	font-size: 2.25em;
-	color: #122ab2;
+	color: var(--accent-color);
 }
-
 
 @media (max-width: 800px) {
 	.preco {

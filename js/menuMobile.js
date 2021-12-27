@@ -9,9 +9,6 @@ function toggleMenu(event){
 const nav = document.getElementById('nav')
 nav.classList.toggle('active')
 
-//se a classe for active, a variavel tem o valor true adicionado, se não tiver, o valor é false
-//esse trecho faz com que seja dito aos leitores de tela que o botão do menu mobile é "expansível", ou seja, 
-//existe mais conteúdo ao clicar nele. Se for true ele está aberto e se for false, está fechado
 const active = nav.classList.contains('active')
 event.currentTarget.setAttribute('aria-expanded', active)
 
